@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<style media="screen">
+body {
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+  /* background-image: url(bg1.jpeg); */
+}
+.logo{
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+  background-blend-mode: screen;
+  margin-bottom: 100px;
+  padding: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-align: center;
+  font-size: 50px;
+  border-radius: 5px;
+  height: 72px;
+  /* width: 300px; */
+  /* border: 2px solid black; */
+}
+.login{
+  margin: auto;
+  width: 400px;
+  border: 2px solid grey;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 30px;
+  border-radius: 6px;
+  /* margin-left: 500px */
+  /* color: white; */
+}
+.judul{
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  border: 2px solid grey;
+  margin: auto;
+  margin-top: -60px;
+  /* border: 2px solid black; */
+  border-radius: 6px;
+  width: 200px;
+  height: 65px;
+  text-align: center;
+  color: white;
+}
+.judul .nama-judul{
+  margin: auto;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 50px;
+}
+.w3-table,td{
+  color: white;
+  padding: 7px;
+   /* border: 2px solid black;  */
+}
+.w3-table td .tombol{
+    padding: 6px;
+    color: white;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"
+<head>
+<title>Login</title>
+</head>
+<body>
+<!-- <h1 class="logo">E-Learning</h1> -->
+<div class="logo">
+  <img class="logo1" src="logo1.jpg" alt="" style="width:14%;
+                                                   border-radius:5px;">
+</div>
+<br><br>
+
+<div class="judul">
+  <h2 class="nama-judul">Login</h2>
+</div>
+
+<div class="login">
+  <form name="validasi"  action="homeweb.html" onsubmit="return validateForm()" method="post">
+
+  <table class="w3-table">
+  <tr>
+    <td>Username</td>
+    <td style="width:2px;">:</td>
+    <th><input class="nama" type="Username" name="username" placeholder="Username" style="border-radius:5px;
+                                                                                                   background-color: unset;
+                                                                                                   border: 2px solid grey;
+                                                                                                   padding: 10px;"></th>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td>:</td>
+    <td><input class="nama" type="password" name="password"  placeholder="*********" style="border-radius:5px;
+                                                                                                   background-color: unset;
+                                                                                                   border: 2px solid grey;
+                                                                                                   padding: 10px;" ></td>
+  </tr>
+<tr>
+  <td></td>
+  <td>
+
+  </td>
+  <td>
+    <button class="tombol" type="button" name="button" onclick="window.location.href='lupa_password.html'">Lupa Password</button>
+    <button class="tombol" type="submit" name="button">Masuk</button>
+  </td>
+</tr>
+</tr>
+  </table>
+</form>
+</body>
+<script>
+function validateForm() {
+  var x = document.forms["validasi"]["username"].value;
+  var y = document.forms["validasi"]["password"].value;
+  if (x == "") {
+    alert("username kosong");
+  }else if (y == "") {
+    alert("password kosong");
+  }else if (x == "admin") {
+    location.replace("homewebadmin.html");
+  } else {
+    return true;
+  }
+  return false;
+}
+</script>
+</html>

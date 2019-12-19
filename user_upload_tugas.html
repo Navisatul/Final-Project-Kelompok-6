@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Upload Tugas</title>
+  </head>
+  <style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+  <body>
+    <h3>Upload Tugas</h3>
+
+    <div>
+      <form action="/action_page.php">
+        <label for="time">Pukul</label>
+        <input type="text" id="lname" name="time" placeholder="Masukkan Waktu....">
+
+        <label for="name">Guru Pengajar</label>
+        <input type="text" name="name" placeholder="Masukkan Nama Guru Pengajar.....">
+
+        <label for="country">Mata Pelajaran</label>
+        <select id="country" name="country">
+          <option value="matematika">Matematika</option>
+          <option value="bioloogi">Biologi</option>
+          <option value="bahasa indonesia">Bahasa Indonesia</option>
+
+
+        </select>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

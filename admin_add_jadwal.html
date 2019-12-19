@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+  body{
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    /* background-image: url(bg1.jpeg); */
+  }
+  .logo{
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+    margin-bottom: 100px;
+    padding: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    /* font-align: center; */
+    font-size: 50px;
+    border-radius: 5px;
+    height: 72px;
+    /* width: 300px; */
+    /* border: 2px solid black; */
+  }
+  .login{
+    margin: auto;
+    width: 400px;
+    border: 2px solid grey;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 30px;
+    border-radius: 6px;
+    /* margin-left: 500px */
+    /* color: white; */
+  }
+  ul{
+    margin-top:-80px;
+    margin-right:30px;
+  }
+
+  ul a{
+    float: right;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-top:5px;
+    height: 5px;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    border-radius: 5px;
+    /* margin:auto */
+    /* border: 2px solid #022e72; */
+    color: #022e72;
+    /* margin-top: -110px; */
+
+  }
+
+  .judul-silahkan{
+    margin:auto;
+    margin-top: -50px;
+    width:577px;
+
+  }
+
+  .silahkan{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-align: center;
+    font-size: 50px;
+    color: #022e72;
+  }
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #customers tr{
+    background-color: #f2f2f2;
+  }
+
+  #customers tr:hover {
+    background-color: #ddd;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet" <head>
+  <title>Jadwal Pelajaran</title>
+</head>
+
+<body>
+    <div class="logo cf">
+        <img class="logo1" src="logo1.jpg" alt="" style="width:14%;
+                                                       border-radius:5px;">
+        <ul>
+          <a href="homeweb.html">Back</a>
+          <a href="E-Learning.html">Elearning</a>
+          <a href="pengumuman.html">Pengumuman</a>
+          <a href="Mapel.html">Mapel</a>
+          <a href="profil.html">Profil</a>
+        </ul>
+      </div>
+      
+  <h3>Masukkan Jadwal Pelajaran</h3>
+
+  <div>
+    <form action="/action_page.php">
+      <label for="name">Hari</label>
+      <input type="text" id="fname" name="name" placeholder="Masukkan Hari.....">
+
+      <label for="time">Pukul</label>
+      <input type="text" id="lname" name="time" placeholder="Masukkan Waktu....">
+
+      <label for="name">Guru Pengajar</label>
+      <input type="text" name="name" placeholder="Masukkan Nama Guru Pengajar.....">
+
+      <label for="country">Mata Pelajaran</label>
+      <select id="country" name="country">
+        <option value="matematika">Matematika</option>
+        <option value="bioloogi">Biologi</option>
+        <option value="bahasa indonesia">Bahasa Indonesia</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
